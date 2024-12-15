@@ -92,15 +92,12 @@ function App() {
       setCurrentTime(storedTime);
     }
 
-    // Update the time every second
     const timeInterval = setInterval(() => {
       const date = new Date();
       const time = date.toLocaleString();
       setCurrentTime(time);
-      localStorage.setItem("currentTime", time); // Save the updated time to localStorage
-    }, 1000); // Update every 1 second
-
-    // Cleanup the interval when the component unmounts
+      localStorage.setItem("currentTime", time);
+    }, 1000); 
     return () => clearInterval(timeInterval);
   }, []);
 
@@ -141,11 +138,10 @@ function App() {
         setHumidity(weatherData.humidity);
         setIcon(weatherData.icon);
 
-        // Get current time based on coordinates
         const date = new Date();
         const time = date.toLocaleString();
         setCurrentTime(time);
-        localStorage.setItem("currentTime", time); // Save the current time to localStorage
+        localStorage.setItem("currentTime", time); 
 
         setCityNotFound(false);
         localStorage.setItem("weatherData", JSON.stringify(weatherData));
