@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(40, 40, 151, 0.539);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Search Bar */
+.input-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid rgba(81, 0, 255, 0.29);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cityInput {
+  flex: 1;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+
+.search-icon img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.search-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Weather Details */
+.weather-details {
+  text-align: center;
+}
+
+.image-container {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.temp {
+  font-size: 40px;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.location {
+  color: rgb(255, 217, 0);
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.country {
+  font-size: 18px;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Coordinates Section */
+.cord {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.cord div {
+  padding: 5px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+}
+
+/* Humidity and Wind Speed Section */
+.data-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.element .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.data {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.humidity-percent,
+.wind-percent {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text {
+  font-size: 12px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  color:#333;
+  margin-top: 15px;
+}
+
+.copyright span{
+  color:#333;
+}
