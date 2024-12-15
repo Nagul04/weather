@@ -27,7 +27,6 @@ body {
   overflow: hidden;
 }
 
-/* Search Bar */
 .input-container {
   display: flex;
   width: 100%;
@@ -59,7 +58,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Weather Details */
 .weather-details {
   text-align: center;
 }
@@ -95,7 +93,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Coordinates Section */
 .cord {
   display: flex;
   justify-content: space-between;
@@ -109,7 +106,6 @@ body {
   margin-top: 5px;
 }
 
-/* Humidity and Wind Speed Section */
 .data-container {
   display: flex;
   justify-content: space-around;
